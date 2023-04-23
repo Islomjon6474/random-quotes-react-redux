@@ -46,9 +46,9 @@ function App() {
       </button>
       <div className="card">
         <i class="fa-solid fa-quote-left"></i>
-        <p>{value[index]?.content}</p>
+        <p>{value[index] ? value[index].content : "...loading"}</p>
 
-        <strong>-{value[index]?.author}</strong>
+        <strong>-{value[index] ? value[index].author : "...loading"}</strong>
       </div>
     </div>
   );
